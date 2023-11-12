@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: rgb(31, 31, 31);
+
+    background-color: #dfdfdf;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.wrapper-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+}
+.form__wrapper {
+    display: flex;
+    align-items: center;
+
+    padding-right: 55px;
+
+    border-radius: 50px 10px 10px 50px;
+    overflow: hidden;
+
+    background-color: #fff;
+}
+.wrapper__item:not(:last-child) {
+    margin-right: 25px;
+}
+.form__img img {
+    width: 260px;
+}
+.form__item {
+    margin-bottom: 15px;
+}
+.form__country label {
+    display: block;
+}
+.button {
+    margin-top: 25px;
+    padding: 2px 5px;
+    border-radius: 0;
+    border: 1px solid #000;
+}

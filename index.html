@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper-flex">
+        <form class="form" action="#" method="POST">
+            <div class="form__wrapper wrapper">
+                <div class="wrapper__item">
+                    <div class="form__img">
+                        <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="">
+                        <h2 class="form__title"></h2>
+                    </div>
+                </div>
+                <div class="wrapper__item">
+                    <div class="form__item">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" pattern="[A-Za-z]{10,50}">
+                    </div>
+                    <div class="form__item">
+                        <p>Sex: </p>
+                        <input type="radio" name="gender" id="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="famale">
+                        <label for="famale">Female</label>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="email">Email: </label>
+                        <input class="form__input" type="email" id="email" pattern="^\S{5,20}@\D{3,5}\.\D{2,5}$">
+                    </div>
+                    <div class="form__item form__country">
+                        <label class="form__label" for="country">Country: </label>
+                        <select id="country">
+                            <option value="none" disabled selected>Choose your country</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                          </select>
+                    </div>
+                    <div class="form__item">
+                        <input class="button" type="submit" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
